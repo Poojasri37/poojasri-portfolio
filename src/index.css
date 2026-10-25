@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* Design System for AI & Data Science Portfolio */
 
@@ -116,6 +116,8 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', system-ui, sans-serif;
+    background-image: radial-gradient(circle at top, hsl(var(--primary) / 0.12), transparent 25%), radial-gradient(circle at bottom right, hsl(var(--accent) / 0.10), transparent 20%);
+    min-height: 100vh;
   }
 
   ::selection {
